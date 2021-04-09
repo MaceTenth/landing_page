@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Architects Daughter";
+}
+
+html {
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  text-transform: capitalize;
+  padding: 20px;
+
+  background-color: bisque;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+nav .container ul li {
+  display: inline-block;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav .container ul li a:hover {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav .container ul li.active {
+  background-color: blueviolet;
+  border-radius: 10px;
+  transition: 0.3 ease background-color;
+}
+
+a {
+  color: blueviolet;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+nav .container ul li.active:hover {
+  background-color: blueviolet;
+  border-radius: 10px;
+
+  transform: rotate(-90deg);
+}
+
+nav .container ul li.active a {
+  color: white;
+}
+
+#home {
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+#authors {
+  background-image: url("../images/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+#authors > h1 {
+  margin-left: 150px;
+}
+
+#authors > p {
+  margin-left: 150px;
+  width: 50%;
+}
+#read {
+  background-image: url("../images/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#stories {
+  background-image: url("../images/4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #444;
+}
+
+#stories > * {
+  margin-left: 150px;
+}
+
+#stories > p {
+  width: 50%;
+}
+
+#contact {
+  background-image: url("../images/5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact > h1 {
+  margin-left: 150px;
+}
+
+#read > h1 {
+  margin-left: 150px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  nav .container {
+    display: block;
+    position: sticky;
+    width: 90%;
+    max-width: auto;
+  }
+
+  nav .container ul li {
+    display: block;
+  }
+
+  nav .container ul li a {
+    display: inline-block;
+
+    text-decoration: none;
+  }
+
+  nav .container ul li a.active {
+    display: inline-block;
+
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #authors > h1 {
+    margin-left: 0;
+  }
+
+  #authors > p {
+    margin-left: 0;
+  }
+
+  #stories > p {
+    margin-left: 0;
+  }
+
+  #stories > h1 {
+    margin-left: 0;
+  }
+}
